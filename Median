@@ -1,0 +1,22 @@
+def median(x):
+  print x
+  x = sorted(x)
+  z = 0
+  y = 0.0
+  q = 0
+  r = 0
+  s = 0
+  a = len(x) + 1
+  if len(x) % 2 != 0:
+    z = a / 2
+    z -= .5
+    z = int(z)
+    y = x[z]
+  else:
+    q = len(x) / 2
+    r = q - 1
+    s = x[q] + x[r]
+    s = float(s)
+    y = s / 2
+  print y
+  return y
